@@ -7,12 +7,13 @@ from snowflake.snowpark.session import Session
 
 # Add Snowflake connection configuration
 snowflake_config = {
-    "account": "your_account",
-    "user": "your_username",
-    "password": "your_password",
-    "warehouse": "your_warehouse",
-    "database": "your_database",
-    "schema": "your_schema",
+    "account": "IKZHEYI-WYB47314",
+    "user": "alekhyan",
+    "password": "TeklinkHgs008*",
+    "role":"SYSADMIN"
+    "warehouse": "COMPUTE_WH",
+    "database": "SMOOTHIES",
+    "schema": "PUBLIC",
 }
 
 # Create Snowflake connection
