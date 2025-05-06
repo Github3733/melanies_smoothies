@@ -10,7 +10,7 @@ snowflake_config = {
     "account": "IKZHEYI-WYB47314",
     "user": "alekhyan",
     "password": "TeklinkHgs008*",
-    "role":"SYSADMIN"
+    "role": "SYSADMIN",  
     "warehouse": "COMPUTE_WH",
     "database": "SMOOTHIES",
     "schema": "PUBLIC",
