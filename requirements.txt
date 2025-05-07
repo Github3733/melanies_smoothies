@@ -1,3 +1,4 @@
 snowflake-snowpark-python
 streamlit
 pyarrow<19.0.0
+requests
