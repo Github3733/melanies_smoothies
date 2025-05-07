@@ -4,6 +4,7 @@ from snowflake.snowpark.functions import col
 import snowflake.connector
 from snowflake.snowpark.session import Session      
 import requests
+import pandas as pd
 
 # Add Snowflake connection configuration
 snowflake_config = {
@@ -31,8 +32,9 @@ name_on_order = st.text_input("Name on Smoothie:")
 st.write("The name on your smoothie will be:", name_on_order)
 
 # Query fruit options from Snowflake
-my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
-# st.dataframe(data=my_dataframe, use_container_width=True)
+my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'),col('SEARCH_ON'))
+st.dataframe(data=my_dataframe, use_container_width=True)
+st.stop()
 
 # Multiselect for ingredients
 ingredients_list = st.multiselect(
