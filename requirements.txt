@@ -3,3 +3,5 @@ streamlit
 pyarrow<19.0.0
 requests
 pandas
+snowflake-connector-python
+
